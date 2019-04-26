@@ -41,7 +41,9 @@ Bob  → (Hash function) →   5278   mod 5   =   3
 # 帳密驗證
 ## General
 一般人認定的帳密驗證可能如下 : 
+
 ![](https://i.imgur.com/jTcM7gf.png)
+
 假設一個情況，今天HACKER破解了我方的資料庫，那受害的當然就是ALICE跟BOB，這邊如果ALICE比較偏向不同網站使用不同密碼，那她的其他APP就會免於災難，BOB如果跟我一樣喜歡一堆APP都用同一個密碼的話，這就是災難的開始。
 為了解決這個問題，我們需要先把使用者的密碼經過hash來產生一個不可逆的password_digest，經過hash function後，資料表會長這樣 :
 
