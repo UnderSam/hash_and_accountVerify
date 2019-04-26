@@ -186,6 +186,9 @@ router.post('/dologin',(req,res)=>{
     console.log(olduser);
 });
 ```
+實際測試，密碼為 12345 , cost = 10 ， 結果為
+
+![](https://i.imgur.com/k6I4ThA.png)
 
 參考講義 : 
 
