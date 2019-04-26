@@ -1,0 +1,14 @@
+<%include partial\header.ejs%>
+        <h1> <%= _title %></h1>
+        <p> <%= _p1 %></p>
+        <table border="2"> 
+            <%user.forEach(function(d){ %>
+            <tr>
+                <td><%= d.id %></td>    
+                <td><%= d.fname %></td>    
+                <td><%= d.lname %></td>    
+                <td><%= d.email %></td>    
+            </tr>
+            <% }) %>
+        </table>
+<%include partial\footer.ejs%>

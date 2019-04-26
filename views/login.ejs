@@ -1,0 +1,22 @@
+<% include partial\header.ejs %>
+        <h1>Login</h1>
+        <form method="POST" action="/login/dologin">
+            <label>Username:</label>
+            <input type = "text" name ="username" required>
+            <br>
+            <label>Password:</label>
+            <input type = "text" name ="password" required>
+            <br>
+            <input type = "submit" name ="submit"  value="登入" >
+        </form>
+        <form method="POST" action="/registration">
+            <input type = "submit" name ="submit"  value="去註冊">
+        </form>
+        <form method="GET" action="/login/auth/github">
+            <input type = "submit" name ="submit"  value="第三方登入">
+        </form>
+<% include partial\footer.ejs %>
+
+
+
+

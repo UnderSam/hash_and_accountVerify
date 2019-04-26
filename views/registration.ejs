@@ -1,0 +1,18 @@
+<% include partial\header.ejs %>
+        <h1>註冊</h1>
+        <form method="POST" action="/registration/register">
+            <label>Username:</label>
+            <input type = "text" name ="username" required>
+            <br>
+            <label>Password:</label>
+            <input type = "text" name ="password" required>
+            <br>
+            <label>Email:</label>
+            <input type = "text" name ="email" required>
+            <input type = "submit" name ="submit"  value="註冊">
+            <br>
+<% include partial\footer.ejs %>
+
+
+
+
