@@ -75,7 +75,7 @@ x7faqgjwabcdefghijklmnopqrstuvwxyz
 7b5001a5a8bcdcfa1b64d41f6339cfa7a5c0eca04cca6ff6a6c1d6aad17794cc
 ```
 ### CODE TEMPLATE
-```
+```php
 <?php
 function hash($a) {
     $salt="SALTANDPEPPER"; //define a salt word : WIKIPEDIA
@@ -104,7 +104,7 @@ BCrypt加密方式就是配合cost參數，再隨機的產生salt對密碼加密
 #### 以下程式碼以NODE.JS演示(感謝袁兄支援)
 
 ### Register
-```
+```javascript
 var express = require('express');
 var router = express.Router();
 var db = require('./connection');
@@ -151,7 +151,7 @@ router.post('/register',(req,res)=>{
 module.exports = router;
 ```
 ### Login
-```
+```javascript
 router.post('/dologin',(req,res)=>{
     var olduser = {
         username:req.body.username,
