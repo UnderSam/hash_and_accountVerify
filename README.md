@@ -78,7 +78,7 @@ x7faqgjwabcdefghijklmnopqrstuvwxyz
 ```php
 <?php
 function hash($a) {
-    $salt="SALTANDPEPPER"; //define a salt word : WIKIPEDIA
+    $salt="SALTANDPEPPER"; //define a salt word : SALTPEPPER
     $b=$a.$salt; //concate two words。
     $b=sha($b); //run SHA hashing。
     return $b; //return the sequence。
